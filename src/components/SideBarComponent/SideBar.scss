@@ -1,5 +1,6 @@
 .sideBar-container{
-  width: 30%;
+  width: 24%;
+  font-weight: 400;
 
   .sideBar-img-container{
     width: 280px;
@@ -7,17 +8,78 @@
     border-radius: 50%;
     border: 1px solid rgb(115, 116, 124);
   }
+
+  .user-name{
+    font-size: 29px;
+    color: #C6CED6;
+    font-weight: 600;
+    padding-top: 12px;
+    line-height: 34px;
+    letter-spacing: -1px;
+  }
+
+  .username{
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .user-designation{
+    color: #C9D1D9;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .user-editProfile-button{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(115, 116, 124, 0.192);
+    border-radius: 5px;
+    padding: 7px 0px;
+    background-color: #21262D;
+    color: #C6CED6;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    &:hover{
+      background-color: rgb(52, 58, 66);
+      border: 1px solid rgb(115, 116, 124);
+    }
+  }
+
+  .user-social-details {
+    
+    & > div{
+        margin-top: 15px;
+    }
+
+    small{
+      font-size: 14px;
+      margin-right: 5px;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+    
+  }
+  
+  .user-achievements, .user-organization{
+    border-top: 1px solid rgba(115, 116, 124, 0.164);
+    margin: 15px 0px;
+    padding-bottom: 10px 0px;
+  }
+
+  .user-achievements h4, .user-organization h4{
+    margin-top: 15px;
+    color: #C9D1D9;
+    font-weight: 600;
+  }
 }
 
-.user-name{
-  font-size: 29px;
-}
 
-.username{
-  font-size: 20px;
-  font-weight: 300;
-}
 
-.user-achievements, .user-organization{
-  border-bottom: 1px solid rgb(115, 116, 124);
-}
+
+
