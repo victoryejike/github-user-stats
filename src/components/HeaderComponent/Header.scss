@@ -1,0 +1,44 @@
+.header-menu, .header-left-menu, .header-left-menu-items, .header-right-menu-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgb(22,27,34);
+  color: rgb(240,246,252);
+  cursor: pointer;
+  font-size: 14px;
+
+  .header-left-menu-logo{
+    margin-right: 5px;
+  }
+
+  input{
+    padding: 5px 10px;
+    background-color: #0D1117;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 15px; 
+    width: 250px;
+    color: rgb(201, 203, 206);
+
+    &::placeholder{
+      color: rgb(201, 203, 206);
+      font-size: 15px;
+    }
+  }
+
+  .header-left-menu-items{
+    padding: 0px 15px;
+
+    & > h4 {
+      margin: 0px 8px;
+      cursor: pointer;
+      font-weight: 550;
+
+      &:hover{
+        color: rgb(201, 203, 206);
+      }
+    }
+  }
+}
