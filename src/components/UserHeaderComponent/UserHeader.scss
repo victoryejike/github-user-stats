@@ -1,0 +1,15 @@
+.user-header-menu-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .user-header-menu-items{
+    padding-right: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    
+    &:hover{
+      color: #C9D1D9;
+    }
+  }
+}

@@ -1,7 +1,26 @@
+.group-header{
+  border-bottom: 1px solid rgba(48, 54, 61, 0.664);
+}
+
+.user-menu{
+  width: 37%;
+  margin: 0 auto;
+  padding: 60px 0px 12px 0px;
+}
+
 .user-display{
   width: 78%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+
+  .repo-cards{
+    margin: 25px 18px;
+
+    & > p {
+      padding: 0px 0px 10px 9px;
+      color: #C9D1D9;
+    }
+  }
 }

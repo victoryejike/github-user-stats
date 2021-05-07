@@ -8,11 +8,20 @@ import "./UserStatPage.scss";
 const User = () => {
   return (
     <>
-      <Header />
+      <div className="group-header">
+        <Header />
+        <div className="user-menu">
+          <UserHeader />
+        </div>
+      </div>
       <div className="user-display">
-        <UserHeader />
         <SideBar />
-        <Card title="E-commerce" subtitle="forked from victorygithub" />
+        <div className="repo-cards">
+          <p>Pinned</p>
+          <Card title="E-commerce" subtitle="forked from victorygithub" />
+          <Card title="E-commerce" subtitle="forked from victorygithub" />
+          <Card title="E-commerce" subtitle="forked from victorygithub" />
+        </div>
       </div>
     </>
   );
