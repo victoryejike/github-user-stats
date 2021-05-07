@@ -17,10 +17,18 @@ const User = () => {
       <div className="user-display">
         <SideBar />
         <div className="repo-cards">
-          <p>Pinned</p>
-          <Card title="E-commerce" subtitle="forked from victorygithub" />
-          <Card title="E-commerce" subtitle="forked from victorygithub" />
-          <Card title="E-commerce" subtitle="forked from victorygithub" />
+          <div className="repo-info">
+            <p>Pinned</p>
+            <p>Customise your pins</p>
+          </div>
+          <div className="repo-card-items">
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            <Card title="E-commerce" subtitle="forked from victorygithub" />
+          </div>
         </div>
       </div>
     </>

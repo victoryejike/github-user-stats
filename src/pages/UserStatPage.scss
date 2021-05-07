@@ -18,9 +18,22 @@
   .repo-cards{
     margin: 25px 18px;
 
-    & > p {
-      padding: 0px 0px 10px 9px;
+    .repo-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .repo-info {
+      padding: 0px 12px 10px 9px;
       color: #C9D1D9;
+    }
+
+    .repo-card-items{
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 20px;
     }
   }
 }
