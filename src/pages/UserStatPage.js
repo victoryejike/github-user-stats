@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../components/CardComponent/Card";
 import SideBar from "../components/SideBarComponent/SideBar";
 import Header from "../components/HeaderComponent/Header";
 import UserHeader from "../components/UserHeaderComponent/UserHeader";
 import "./UserStatPage.scss";
 
+import axios from "axios";
+
 const User = () => {
+  const fetchData = async () => {
+    const response = await axios.get(`https://api.github.com/user`);
+    console.log(response);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="group-header">
