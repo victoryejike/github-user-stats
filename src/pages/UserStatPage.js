@@ -9,8 +9,10 @@ import axios from "axios";
 
 const User = () => {
   const fetchData = async () => {
-    const response = await axios.get(`https://api.github.com/user`);
-    console.log(response);
+    const response = await axios.get(
+      `https://api.github.com/users/victoryejike`
+    );
+    console.log(response.data);
   };
 
   useEffect(() => {
