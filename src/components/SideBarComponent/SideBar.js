@@ -1,12 +1,12 @@
 import React from "react";
 import "./SideBar.scss";
 
-const SideBar = () => {
+const SideBar = ({ data }) => {
   return (
     <>
       <div className="sideBar-container">
         <div className="sideBar-img-container">
-          <img alt="user stat display img" />
+          <img src={data.avatar_url} alt="user stat display img" />
         </div>
         <div className="sideBar-user-detail">
           <h2 className="user-name"> Ejike Chinecherem Victory </h2>
