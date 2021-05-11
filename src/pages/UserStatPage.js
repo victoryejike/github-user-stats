@@ -9,7 +9,8 @@ import axios from "axios";
 
 const User = () => {
   const [userData, setUserData] = useState([]);
-  const fetchData = async () => {
+  const [pinnedData, setPinnedData] = useState([]);
+  const fetchGithubData = async () => {
     const response = await axios.get(
       `https://api.github.com/users/victoryejike`
     );
@@ -17,8 +18,17 @@ const User = () => {
     setUserData(response.data);
   };
 
+  const fetchPinnedData = async () => {
+    const response = await axios.get(
+      `https://gh-pinned-repos-5l2i19um3.vercel.app/?username=victoryejike`
+    );
+    let data = response.data;
+    setPinnedData(data);
+  };
+
   useEffect(() => {
-    fetchData();
+    fetchGithubData();
+    fetchPinnedData();
   }, []);
 
   return (
@@ -37,12 +47,11 @@ const User = () => {
             <p>Customise your pins</p>
           </div>
           <div className="repo-card-items">
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
-            <Card title="E-commerce" subtitle="forked from victorygithub" />
+            {pinnedData.map((pinnedData, i) => (
+              <Card title={pinnedData.repo} language={pinnedData.language}>
+                {pinnedData.description}
+              </Card>
+            ))}
           </div>
         </div>
       </div>

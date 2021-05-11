@@ -9,21 +9,19 @@ const SideBar = ({ data }) => {
           <img src={data.avatar_url} alt="user stat display img" />
         </div>
         <div className="sideBar-user-detail">
-          <h2 className="user-name"> Ejike Chinecherem Victory </h2>
+          <h2 className="user-name"> {data.name} </h2>
 
-          <span className="username">victoryejike </span>
-          <p className="user-designation">
-            Software Engineer | Frontend Developer
-          </p>
+          <span className="username">{data.login}</span>
+          <p className="user-designation">{data.bio}</p>
           <button className="user-editProfile-button">Edit profile</button>
           <div className="user-social-details">
             <small> 2 followers</small>
             <small> 2 following</small>
             <small> 2 </small>
             <div>
-              <p className="user-location">Lagos</p>
+              <p className="user-location">{data.location}</p>
               <p className="user-twitter-action">
-                <a href="#?">@e_vck3</a>
+                <a href="#?">@{data.twitter_username}</a>
               </p>
             </div>
           </div>
