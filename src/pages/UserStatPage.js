@@ -48,7 +48,12 @@ const User = () => {
           </div>
           <div className="repo-card-items">
             {pinnedData.map((pinnedData, i) => (
-              <Card title={pinnedData.repo} language={pinnedData.language}>
+              <Card
+                key={i}
+                index={i}
+                title={pinnedData.repo}
+                language={pinnedData.language}
+              >
                 {pinnedData.description}
               </Card>
             ))}

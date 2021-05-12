@@ -16,7 +16,7 @@
   align-items: flex-start;
 
   .repo-cards{
-    margin: 25px 18px;
+    margin: 25px 20px;
 
     .repo-info{
       display: flex;
@@ -40,9 +40,9 @@
 
     .repo-card-items{
       display: grid;
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: repeat(2, 455px);
       grid-template-rows: repeat(3, auto);
-      grid-row-gap: 20px;
+      grid-row-gap: 14px;
     }
   }
 }
