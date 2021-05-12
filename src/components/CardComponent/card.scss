@@ -6,17 +6,50 @@
   width: 440px;
   margin: 0px 10px;
   padding: 10px 22px;
-  font-size: 13px;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 
-  .card-body.right-spacing{
-    margin: 0px 20px 0px 10px;
+  .language {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .language-color {
+      margin-right: 3px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 1px solid rgba(128, 128, 128, 0.377);
+
+      &.javascript{
+        background-color: rgb(241,224,90);
+      }
+
+      &.css{
+        background-color: rgb(86,61,124);
+      }
+
+      &.html{
+        background-color: rgb(227,76,38);
+      }
+    }
+  }
+
+  .language-color{
+    width: 20px;
+    height: 20px;
+    color: blue;
   }
 
   .title{
     color: #58A6FF;
     font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 35px;
+    font-weight: 550;
+    margin-bottom: 6px;
 
     &:hover{
       text-decoration: underline;

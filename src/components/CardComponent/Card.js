@@ -8,7 +8,16 @@ const Card = ({ title, subtitle, children, language }) => {
         {title ? <p className="title">{title}</p> : ""}
         {subtitle ? <small className="subtitle">{subtitle}</small> : ""}
         <div>{children}</div>
-        <div>{language}</div>
+        <div className="language">
+          <div
+            className={`${
+              language === "JavaScript" ? "language-color javascript" : ""
+            } ${language === "CSS" ? "language-color css" : ""} ${
+              language === "HTML" ? "language-color html" : ""
+            }`}
+          ></div>
+          <div className="language-name">{language}</div>
+        </div>
       </div>
     </>
   );
