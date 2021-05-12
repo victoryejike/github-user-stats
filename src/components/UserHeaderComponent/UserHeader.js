@@ -6,7 +6,7 @@ const UserHeader = ({ data }) => {
     <div className="user-header-menu-container">
       <p className="user-header-menu-items">Overview</p>
       <p className="user-header-menu-items">
-        Repositories <span>{data.public_repos}</span>
+        Repositories <span className="repo-number">{data.public_repos}</span>
       </p>
       <p className="user-header-menu-items">Projects</p>
       <p className="user-header-menu-items">Packages</p>
