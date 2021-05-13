@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+
 import Card from "../components/CardComponent/Card";
 import SideBar from "../components/SideBarComponent/SideBar";
 import Header from "../components/HeaderComponent/Header";
 import UserHeader from "../components/UserHeaderComponent/UserHeader";
+import UserContribution from "../components/UserContributionComponent/UserContribution";
 import "./UserStatPage.scss";
 
 import axios from "axios";
@@ -58,6 +60,7 @@ const User = () => {
               </Card>
             ))}
           </div>
+          <UserContribution />
         </div>
       </div>
     </>
